@@ -1,0 +1,12 @@
+.box{
+    border: 1px solid grey;
+    display: flex;
+    width: 300px;
+    height: 250px;
+    flex-direction: column
+ 
+}
+
+.poster_product{
+    height: 250px;
+}

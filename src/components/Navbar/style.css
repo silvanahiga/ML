@@ -1,0 +1,22 @@
+.navbar{
+    width: 100%;
+    background: #fff159;
+    height: 80px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.nav_logo img{
+    height: 28px;
+    width: 134px;
+    left:10px;
+   
+}
+
+
+.cards img{
+    max-width: 340px;
+    max-height: 39px;
+}

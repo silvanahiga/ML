@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Carousel from "./components/Carousel"
+import Home from "./components/Home";
+import Suma from "./components/Suma"
+
+class App extends React.Component {
+
+  render() {
+    return (
+      <div className="App">
+        <Router>
+
+          <Route path="/" exact component={Home} />
+          <Route path="/carousel/:site" component={Carousel} />
+          <Route path="/suma" component={Suma} />
+      
+        </Router>
+
+
+      </div>
+    );
+
+  }
 }
 
 export default App;
